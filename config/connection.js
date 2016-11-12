@@ -1,9 +1,7 @@
-// setup the code to connect Node to MySQL.
-
 var mysql = require('mysql');
-
-//var localConnection = "mysql://root:yourpassword@localhost:3306/burgers_db";
-//mysql.createConnection(process.env.JAWSDB_URL);
+var localConnection = “mysql://root:yourpassword@localhost:3306/burgers_db";
+var dbConnection = process.env.JAWSDB_URL || localConnection;
+var connection = mysql.createConnection(dbConnection);
 
 var connection = mysql.createConnection({
 	port: 3306,

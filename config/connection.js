@@ -1,5 +1,5 @@
 var mysql = require('mysql');
-var localConnection = "mysql://n5jfbwtwvnakly53:t30mgzpbc7f9e8pf@enqhzd10cxh7hv2e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hzuz4d5nvwxpvokd";
+var localConnection = "mysql://root:yourpassword@localhost:3306/burgers_db";
 var dbConnection = process.env.JAWSDB_URL || localConnection;
 var connection = mysql.createConnection(dbConnection);
 
